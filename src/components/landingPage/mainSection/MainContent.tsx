@@ -3,8 +3,6 @@ import React from 'react'
 function MainContent() {
 
 
-    console.log(localStorage.getItem("theme"))
-
     return (
         <div>
             <div className="flex items-center flex-wrap justify-between w-full h-screen pb-20" >
@@ -24,7 +22,7 @@ function MainContent() {
                             :
                             <img src="./images/splashred.png" alt="Red splash" />
                     }
-                    <img src="./images/personalnormal.png" alt="" className='absolute top-0 left-0 w-36 h-auto' />
+                    <img src="./images/personalgray.png" alt="" className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-64 rounded-full' />
                 </div>
 
             </div>
