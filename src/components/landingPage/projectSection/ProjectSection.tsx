@@ -17,11 +17,13 @@ function ProjectSection() {
         title="VoicePick"
         description="Applicaiton and it is very good"
         image="./images/mac.png"
+        secondImage="./images/trails.png"
       />
       <ProjectCard
         title="VoicePick"
         description="Applicaiton and it is very good"
         image="./images/mac.png"
+        secondImage="./images/next.png"
       />
     </div>
   );

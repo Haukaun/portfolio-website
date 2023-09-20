@@ -35,15 +35,18 @@ function SkillSection() {
 
   return (
     <div className="flex gap-10 flex-col mt-20 text-center text-3xl font-bold dark:text-white">
-      <h1>Skills</h1>
-      <h2>
-        <span className="text-blue-500 dark:text-red-500">Oh!</span> it looks
-        like i forgot to turn on the lights
-      </h2>
-      <h2>
-        Please <span className="text-blue-500 dark:text-red-500">press</span>{" "}
-        the switch for flashlight
-      </h2>
+      <div className="max-w-[70%] 2xl:max-w-[85rem] mx-auto flex flex-col gap-5">
+        <h1>Skills</h1>
+        <h2>
+          <span className="text-blue-500 dark:text-red-500">Oh!</span> It looks
+          like I forgot to turn on the lights.
+        </h2>
+        <h2>
+          Please <span className="text-blue-500 dark:text-red-500">press</span>{" "}
+          the switch for flashlight.
+        </h2>
+      </div>
+
       <div>
         <span
           onClick={toggleFlashlight}
@@ -62,16 +65,17 @@ function SkillSection() {
         </span>
       </div>
 
-      <div className="relative h-auto">
+      <div className="relative min-h-screen">
         <SkillCardList />
         <div
           ref={divRef}
+          onMouseLeave={() => setLight(false)}
           onMouseMove={handleMouseMove}
           className="absolute top-0 left-0 w-full h-full z-10"
           style={{
             ...flashLightStyle,
             backgroundImage:
-              "linear-gradient(to bottom, transparent 0%,   rgba(0, 0, 0, 0.9) 7%, rgba(0, 0, 0, 1) 100%)",
+              "linear-gradient(to bottom, transparent 0%,   rgba(0, 0, 0, 0.97) 7%, rgba(0, 0, 0, 1) 100%)",
           }}
         ></div>
       </div>
