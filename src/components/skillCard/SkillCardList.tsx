@@ -20,9 +20,9 @@ function SkillCardList() {
   ];
 
   return (
-    <div className="max-w-[70%] 2xl:max-w-[85rem] mx-auto flex flex-wrap justify-center items-center gap-10">
-      {images.map((image) => (
-        <SkillCard image={image} />
+    <div className="max-w-[70%] 2xl:max-w-[85rem] mx-auto flex flex-wrap justify-between items-center gap-10">
+      {images.map((image, index) => (
+        <SkillCard key={index} image={image} />
       ))}
     </div>
   );

@@ -28,9 +28,9 @@ function SkillSection() {
 
   const flashLightStyle = light
     ? {
-        mask: `radial-gradient(circle ${flashlightRadius}px at ${position.x}px ${position.y}px, transparent, black 200px)`,
-        WebkitMask: `radial-gradient(circle ${flashlightRadius}px at ${position.x}px ${position.y}px, transparent, black 300px)`,
-      }
+      mask: `radial-gradient(circle ${flashlightRadius}px at ${position.x}px ${position.y}px, transparent, black 200px)`,
+      WebkitMask: `radial-gradient(circle ${flashlightRadius}px at ${position.x}px ${position.y}px, transparent, black 300px)`,
+    }
     : {};
 
   return (
@@ -75,7 +75,7 @@ function SkillSection() {
           style={{
             ...flashLightStyle,
             backgroundImage:
-              "linear-gradient(to bottom, transparent 0%,   rgba(0, 0, 0, 0.97) 7%, rgba(0, 0, 0, 1) 100%)",
+              "linear-gradient(to bottom, transparent 0%,   rgba(0, 0, 0, 0.85) 7%, rgba(0, 0, 0, 0.85) 93%, transparent 100%)",
           }}
         ></div>
       </div>
