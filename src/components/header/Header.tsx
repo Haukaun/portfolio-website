@@ -4,13 +4,6 @@ import DarkModeSwitch from "../darkModeSwitch/DarkModeSwitch"
 
 function Header() {
 
-    const handleClickScroll = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    }
-
     return (
         <header className="flex flex-wrap flex-col sm:justify-start sm:flex-nowrap z-50 w-full text-md py-4 bg-white dark:bg-gray-800">
             <nav className=" w-full mx-auto sm:flex sm:items-center sm:justify-between" aria-label="Global">
