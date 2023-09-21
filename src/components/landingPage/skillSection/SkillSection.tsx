@@ -34,9 +34,9 @@ function SkillSection() {
     : {};
 
   return (
-    <div className="flex gap-10 flex-col mt-20 text-center text-3xl font-bold dark:text-white">
+    <div id="skillsection" className="flex gap-10 flex-col mt-32 text-center text-2xl font-bold dark:text-white">
       <div className="max-w-[70%] 2xl:max-w-[85rem] mx-auto flex flex-col gap-5">
-        <h1>Skills</h1>
+        <h1 className="text-3xl">Skills</h1>
         <h2>
           <span className="text-blue-500 dark:text-red-500">Oh!</span> It looks
           like I forgot to turn on the lights.

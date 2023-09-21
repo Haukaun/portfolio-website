@@ -4,7 +4,8 @@ import MainContent from "../components/landingPage/mainSection/MainContent";
 import ProjectSection from "../components/landingPage/projectSection/ProjectSection";
 import SkillSection from "../components/landingPage/skillSection/SkillSection";
 import Footer from "../components/footer/Footer";
-import ContactSection from "../components/landingPage/contactSection/ContactSection";
+import { ContactSection } from "../components/landingPage/contactSection/ContactSection.1";
+
 
 function LandingPage() {
     return (
@@ -16,9 +17,8 @@ function LandingPage() {
                     <ProjectSection />
                 </div>
                 <SkillSection />
-
+                <ContactSection />
                 <div className="max-w-[70%] 2xl:max-w-[85rem] mx-auto">
-                    <ContactSection />
                     <Footer />
                 </div>
 
